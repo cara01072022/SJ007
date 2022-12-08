@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover">
+  <title>ลิงค์แชร์กิจกรรม</title>
+</head>
+<body>
+    <script src="https://static.line-scdn.net/liff/edge/versions/2.5.0/sdk.js"></script>
+    <script>
+        async function main() {
+                                         // Liff ID
+            await liff.init({ liffId: "1657674204-Z0r39JPX" })
+            await liff.shareTargetPicker([
+                {
+                    type: "flex",
+                    // ข้อความก่อนกดอ่าน
+                    altText: "รับด่วนโค้ดฟรี 50฿",
+                    contents: 
+                    // โค้ดจาก line bot designer
+                    {
+  "type": "bubble",
+  "hero": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "image",
+            "url": "https://cdn.discordapp.com/attachments/1043515584073183313/1044559636012990504/png-2.png",
+            "aspectRatio": "10.40:15.80",
+            "size": "full"
+          }
+        ]
+      },
+      {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "image",
+                "url": "https://cdn.discordapp.com/attachments/1043515584073183313/1044927021127581736/b355fc5e929c93dc.png",
+                "size": "full",
+                "aspectRatio": "4.8:1.3"
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "image",
+                "url": "https://cdn.discordapp.com/attachments/1043515584073183313/1044927047346176000/57964f29269b70f7.png",
+                "size": "full",
+                "aspectRatio": "4.8:1.3"
+              }
+            ]
+          }
+        ],
+        "margin": "sm",
+        "spacing": "xs",
+        "action": {
+          "type": "uri",
+          "label": "action",
+          "uri": "https://lin.ee/glrDBB4"
+        },
+        "offsetBottom": "sm"
+      }
+    ],
+    "background": {
+      "type": "linearGradient",
+      "angle": "0deg",
+      "startColor": "#663300",
+      "endColor": "#663300",
+      "centerColor": "#ff9933"
+    }
+  }
+}
+                }
+            ])
+            liff.closeWindow()
+        }
+        main()
+    </script>
+</body>
+</html>
